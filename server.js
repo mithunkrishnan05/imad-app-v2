@@ -23,6 +23,23 @@ var articleone={
                 odapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapod
                 apodapodapodapodapodapodapodapodapodapodapodapodapodapodapoda</p>`
 };
+var articletwo={
+    title:'article-one!mithun1',
+    heading:'article-two',
+    date:'feb 5 2017',
+    content:`<p>
+                
+                dapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodap
+                odapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapod
+                apodapodapodapodapodapodapodapodapodapodapodapodapodapodapoda</p>`
+};
+var articlethree={
+    title:'article-three!mithun1',
+    heading:'article-three',
+    date:'nov 5 2017',
+    content:`<p>
+                prince</p>`
+};
 
 function createTemplate (data){
 var title=data.title;
