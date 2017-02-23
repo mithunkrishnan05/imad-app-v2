@@ -79,7 +79,7 @@ return htmlTemplate;
 
 app.get('/:articleName', function (req, res) {
     var articleName= req.params.articleName;
-  res.send(articles(articleName));
+  res.send(articles[articleName]);
 });
 
                     /* INITIAL CODE********************************************************
