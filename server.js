@@ -77,12 +77,12 @@ var htmlTemplate=`
 return htmlTemplate;
 }
 
-/*app.get('/:articleName', function (req, res) {
+app.get('/:articleName', function (req, res) {
     var articleName= req.params.articleName;
-  res.send(articles[articleName]);
-});*/
+  res.send(createTemplate(articles[articleName]));
+});
 
-                    /* INITIAL CODE********************************************************/
+                    /* INITIAL CODE********************************************************
                     app.get('/article-one',function (req, res) {
                        res.send(createTemplate(articles[articleName]));
                     });
@@ -94,7 +94,7 @@ return htmlTemplate;
                     app.get('/article-three',function (req, res){
                       res.send(createTemplate(articlethree));//
                     });
-                    
+                    */
                     
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
