@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articleone={
     title:'article-one!mithun1',
     heading:'article-one',
-    date:'jan 52017',
+    date:'jan 5 2017',
     content:`<p>
                 poda podapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodapodap
                 odapodapodapodapodapodapoda
@@ -43,7 +43,7 @@ var htmlTemplate=`
              </div>
         <hr/>
         <h3>
-        $[heading]
+        ${heading}
         </h3>
             <div>
             ${date}
