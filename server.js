@@ -77,13 +77,13 @@ var htmlTemplate=`
 return htmlTemplate;
 }
 
-app.get('/:articleName', function (req, res) {
+/*app.get('/:articleName', function (req, res) {
     var articleName= req.params.articleName;
   res.send(articles[articleName]);
-});
+});*/
 
-                    /* INITIAL CODE********************************************************
-                    /*app.get('/article-one',function (req, res) {
+                    /* INITIAL CODE********************************************************/
+                    app.get('/article-one',function (req, res) {
                        res.send(createTemplate(articles[articleName]));
                     });
                     
@@ -93,7 +93,7 @@ app.get('/:articleName', function (req, res) {
                     
                     app.get('/article-three',function (req, res){
                       res.send(createTemplate(articlethree));//
-                    });*************************************************************************/
+                    });
                     
                     
 app.get('/ui/style.css', function (req, res) {
