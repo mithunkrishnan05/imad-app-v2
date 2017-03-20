@@ -16,8 +16,8 @@ var app = express();
 app.use(morgan('combined'));
 
 var Pool = new Pool(config);
-app.get('/test-db',function(req,res) {
-  pool.query('select * From test ',function(err, result){
+app.get('/test-db',function(req, res) {
+  Pool.query('select * From test ',function(err, result){
       if(err){
           res.status(500).send(err.toString());
       } else{
@@ -72,11 +72,11 @@ var articles = {
 };
 
 function createTemplate (data){
-var title =data.title;
-var heading=data.heading;
-var date=data.date;
-var content=data.content;
-var htmlTemplate=`
+var title = data.title;
+var heading = data.heading;
+var date = data.date;
+var content = data.content;
+var htmlTemplate =`
 <html>
     <head>
         <title>${title}</title>
