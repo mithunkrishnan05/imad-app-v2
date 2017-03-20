@@ -66,7 +66,6 @@ var heading=data.heading;
 var date=data.date;
 var content=data.content;
 var htmlTemplate=`
-
 <html>
     <head>
         <title>${title}</title>
@@ -118,7 +117,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var pool = new Pool(config);
+var Pool = new Pool(config);
 app.get('/test-db',function(req,res) {
   pool.query('select * From test ',function(err, result){
       if(err){
