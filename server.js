@@ -31,7 +31,7 @@ app.get('/counter',function (req, res){
 });
 
 
-var articles = {
+/*var articles = {
  'article-one':{
     title:'article-one!mithun1',
     heading:'article-one',
