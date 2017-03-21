@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+var pool = require('pg').Pool;
 
 var config = {
     user:'mithunkrishnan05',
@@ -13,7 +13,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var Pool = new Pool(config);
+var pool = new Pool(config);
 app.get('/test-db',function(req, res) {
   Pool.query('select * From test ',function(err, result){
       if(err){
