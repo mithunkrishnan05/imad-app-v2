@@ -7,7 +7,7 @@ var config = {
     user:'mithunkrishnan05',
     database:'mithunkrishnan05',
     host:'db.imad.hasura-app.io',
-    password: db-mithunkrishnan05-27344,
+    password: 'db-mithunkrishnan05-27344',
     port:'5432'
 };
 var app = express();
