@@ -13,7 +13,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var pool = new Pool(config);
+/*var pool = new Pool(config);
 app.get('/test-db',function(req, res) {
   pool.query('select * From test ',function(err, result){
       if(err){
@@ -22,7 +22,7 @@ app.get('/test-db',function(req, res) {
           res.send(JSON.stringyfy(result));
       }
   });
-});
+});*/
 
 var counter=0;
 app.get('/counter',function (req, res){
