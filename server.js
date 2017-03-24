@@ -14,7 +14,7 @@ var app = express();
 app.use(morgan('combined'));
 
 function hash(input){
-    varhashed = crypto.pbkdf2Sync(input, 'salt', 100000, 512, 'sha512');
+    var hashed = crypto.pbkdf2Sync(input, 'salt', 100000, 512, 'sha512');
     return hashedString.toString('hex');
     
 }
