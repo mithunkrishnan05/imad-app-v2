@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 function hash (input,salt) {
     /*var hashed = crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');*/
 const key = crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
- return key.toString('hex');
+ return key.toString();
     
 }
 app.get('/hash/:input',function (req,res) {
