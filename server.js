@@ -22,8 +22,8 @@ const key = crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
  return key.toString();
     
 }
-app.get('/hash/:input',function (req,res) {
-
+app.get('/hash',function (req,res) {
+res.sendFile(path.join(__dirname, 'ui', 'index.html'));
     var hashedString = hash(req.params.input,'this is sample');
 
     res.send(hashedString);
